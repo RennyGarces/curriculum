@@ -5,48 +5,45 @@
 }
 /*inheretance*/
 body {
-  font-family: sans-serif;
-  background-image: url(/img/code.jpg);
+  position: relative;
+
+  font-family: "Quicksand", sans-serif;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(93, 79, 117, 1) 22%,
+    rgba(116, 169, 191, 1) 51%,
+    rgba(0, 212, 255, 1) 100%
+  );
   cursor: grab;
 }
 .container {
-  width: 95%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 70%;
+  margin: 30px auto;
 }
 
 /*header*/
 .main-header {
-  position: relative;
+  display: flex;
+  background-color: #05030376;
+  border-radius: 10px;
+  gap: 40px;
 }
-.imgheader {
-  width: 99%;
-  height: 200px;
-  border-radius: 5px;
-  box-shadow: 5px 3px 15px;
-}
-.main-header::after {
-  content: "Renny Garces Marriaga";
-  position: absolute;
-  color: #ffffffb3;
-  font-size: 30px;
-  top: 30%;
-  left: 30px;
-}
+
 .download {
   position: absolute;
   border: none;
   padding: 20px;
   cursor: pointer;
-  bottom: 15px;
-  right: 20px;
-  border-radius: 5px;
-  border-bottom-left-radius: 20px;
-  background-color: rgb(255, 255, 255, 0.7);
+  top: -25px;
+  right: 10px;
+  border-radius: 10px;
+  background-color: orange;
 }
 .download:hover {
   color: white;
-  background-color: rgba(62, 103, 137, 0.5);
+  background-color: rgba(8, 4, 4, 0.811);
 }
 
 .download:active {
@@ -56,25 +53,47 @@ body {
 /*aside*/
 
 .rennyphoto {
-  width: 200px;
-  height: 210px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  border-bottom-left-radius: 50px;
-  box-shadow: 8px 8px 5px rgba(64, 106, 108, 0.2);
+  align-self: center;
+  width: 100px;
+  height: 110px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px rgba(203, 203, 203, 0.434);
+  transform: scale(1.2);
 }
-h2 {
-  color: rgb(10, 69, 121);
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 5px;
+.title {
+  background-color: black;
+  color: aliceblue;
+  padding: 30px 30px;
+  border-radius: 5px;
+  text-align: justify;
 }
 
+h2 {
+  color: rgb(7, 34, 57);
+  text-align: start;
+  margin-bottom: 15px;
+}
+
+.title h2 {
+  padding: 0 5px;
+  color: rgb(255, 255, 255);
+}
+.title p {
+  color: rgb(191, 191, 191);
+}
+.links-header {
+  position: absolute;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* ICONS PROYECTS AND CERTS */
+button {
+  box-shadow: 0px 0px 10px #0000004d;
+}
 .meus_links {
-  text-align: center;
   padding: 4px 4px;
 }
 .img_contacts {
@@ -83,24 +102,30 @@ h2 {
 }
 
 /*article*/
-article {
-  border: 3px solid rgba(66, 99, 207, 0.3);
-  background-color: #d4d4d4;
-  padding: 10px 10px;
+article,
+.meus_links {
+  border-right: 3px solid rgba(0, 0, 0, 0.352);
+  background-color: #ffffff87;
+  padding: 40px 50px;
   border-radius: 5px;
+  margin-top: 10px;
+  text-align: justify;
 }
 p {
   margin-left: 10px;
   line-height: 2;
+  font-weight: 550;
+  font-size: 20px;
+  color: #1d1c1c;
 }
 
-article p strong:nth-child(4) {
-  color: rgb(65, 17, 62);
-}
-
-#return {
-  text-decoration: none;
+strong {
   color: rgb(0, 0, 0);
+}
+
+.return {
+  text-decoration: none;
+  color: rgba(22, 37, 171, 0.653);
 }
 
 #return:hover {
@@ -108,8 +133,13 @@ article p strong:nth-child(4) {
 }
 
 .copyright {
-  background-color: #d4d4d4;
-  color: rgb(0, 0, 0);
-  font-size: 10px;
-  border-radius: 15px;
+  border-right: 3px solid rgba(0, 0, 0, 0.352);
+  border-bottom: 3px solid rgba(0, 0, 0, 0.442);
+  background-color: #d4d4d470;
+  margin-top: 20px;
+
+  border-radius: 5px;
+}
+.copyright p {
+  font-size: 15px;
 }
