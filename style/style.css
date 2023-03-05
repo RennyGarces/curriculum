@@ -34,7 +34,7 @@ body {
   display: flex;
   background-color: #05030376;
   border-radius: 10px;
-  gap: 40px;
+  justify-content: space-between;
 }
 
 .download {
@@ -59,14 +59,15 @@ body {
 /*aside*/
 
 .rennyphoto {
-  align-self: center;
+  align-self: end;
   width: 100px;
   height: 110px;
   border-radius: 3px;
-  box-shadow: 0px 0px 5px rgba(203, 203, 203, 0.434);
-  transform: scale(1.2);
+  box-shadow: 0px 0px 5px rgb(0, 0, 0);
+  transform: scale(1.4);
 }
 .title {
+  width: 75%;
   background-color: black;
   color: aliceblue;
   padding: 30px 30px;
@@ -120,9 +121,9 @@ article,
 }
 p {
   margin-left: 10px;
-  line-height: 2;
+  line-height: 1.6;
   font-weight: 550;
-  font-size: 20px;
+  font-size: 15px;
   color: #1d1c1c;
 }
 
